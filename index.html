@@ -1,207 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>/////</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-            text-align: center;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
 
-        header {
-            background: #24292f;
-            color: white;
-            padding: 30px 20px;
-        }
+    header {
+      background: #24292f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        header h1 {
-            margin: 0 0 10px;
-            font-size: 36px;
-        }
+    nav {
+      margin-top: 10px;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+    }
 
-        .card {
-            background: white;
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-        }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #0969da;
+      color: white;
+    }
 
-        .flower {
-            width: 100%;
-            max-width: 460px;
-            border-radius: 12px;
-        }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-        /* Custom icons */
-        .icons {
-            display: flex;
-            justify-content: center;
-            gap: 35px;
-            flex-wrap: wrap;
-            margin: 30px 0;
-        }
+    .hero p {
+      font-size: 18px;
+    }
 
-        .icon {
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            color: white;
-        }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-        .circle {
-            background: #3498db;
-            border-radius: 50%;
-        }
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
 
-        .square {
-            background: #e74c3c;
-            border-radius: 12px;
-        }
-
-        .diamond {
-            background: #9b59b6;
-            transform: rotate(45deg);
-        }
-
-        .diamond span {
-            transform: rotate(-45deg);
-        }
-
-        /* Triangle */
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 45px solid transparent;
-            border-right: 45px solid transparent;
-            border-bottom: 80px solid #f39c12;
-        }
-
-        /* Trigonometric wave */
-        .wave {
-            height: 150px;
-            background: #111827;
-            overflow: hidden;
-            position: relative;
-            border-radius: 15px;
-        }
-
-        .wave::before {
-            content: "∿ ∿ ∿ ∿ ∿ ∿ ∿ ∿ ∿";
-            position: absolute;
-            width: 100%;
-            top: 35px;
-            left: 0;
-            color: #00ffcc;
-            font-size: 70px;
-            letter-spacing: 5px;
-        }
-
-        .math {
-            font-size: 28px;
-            color: #3498db;
-            margin: 20px;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            background: #24292f;
-            color: white;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #24292f;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>////</h1>
-        <p>Git</p>
-    </header>
+  <header>
+    <h2>My Website</h2>
 
-    <div class="container">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <div class="card">
-            <h2>////</h2>
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This website is published using GitHub Pages.</p>
+  </section>
 
-            <img src="flower.png"
-                 alt="Sample flower"
-                 class="flower">
+  <main class="content">
 
-            <p>essentials</p>
-            <p>This is the first file in Git repository.</p>
-        </div>
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p>
+        This is a simple website that you can host for free
+        using GitHub Pages.
+      </p>
+    </section>
 
-        <div class="card">
-            <h2>Custom Shapes & Icons</h2>
+    <section class="card">
+      <h2>My Content</h2>
+      <p>
+        Add your articles, projects, photos, portfolio,
+        or other content here.
+      </p>
+    </section>
 
-            <div class="icons">
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: example@email.com</p>
+    </section>
 
-                <div class="icon circle">
-                    ★
-                </div>
+  </main>
 
-                <div class="icon square">
-                    ♥
-                </div>
-
-                <div class="icon diamond">
-                    <span>◆</span>
-                </div>
-
-                <div class="triangle"></div>
-
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>📐 Trigonometric Shape</h2>
-
-            <p class="math">
-                sin(x) + cos(x)
-            </p>
-
-            <div class="wave"></div>
-
-            <p>
-                A simple visual representation of a trigonometric wave.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>/////</h2>
-
-            <p>
-                Create → Add → Commit → Push
-            </p>
-
-            <p>
-                Keep learning and experimenting!
-            </p>
-        </div>
-
-    </div>
-
-    <footer>
-       sample project.
-    </footer>
+  <footer>
+    <p>© 2026 My Website</p>
+  </footer>
 
 </body>
 </html>
